@@ -1,0 +1,3 @@
+// Configure babel preset to work with ES6 features
+// Ref: https://blog.jakoblind.no/babel-preset-env/
+{ ‘presets’: ['@babel/preset-env'] }
