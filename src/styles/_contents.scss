@@ -76,4 +76,8 @@
 
 .contents__contact {
 	grid-area: ct;
+
+	&__title {
+		display: block;
+	}
 }
