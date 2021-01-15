@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Anaheim&display=swap);
-
 $primary-color: rgb(50, 182, 160);
-$font-stack: 'Anaheim', sans-serif;
+$font-stack: 400 1rem 'Dosis', sans-serif;
 
 * {
 	margin: 0;
@@ -19,6 +17,6 @@ html {
 }
 
 body {
-	font-family: 100% $font-stack;
+	font: $font-stack;
 	background: $primary-color;
 }
