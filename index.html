@@ -9,40 +9,61 @@
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&family=Bodoni+Moda:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <title>Portfolio</title>
+    <title>Emiri Begic</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li>emiri begic</li>
-                    <li>About</li>
-                    <li>Project</li>
-                    <li>Skill</li>
-                    <li>Contact</li>
+        <header class="page__header">
+            <!-- TODO Items will be populated later with JS-->
+            <!-- TODO Smooth scroll to each section-->
+            <nav class="nav">
+                <a href="#">emiri begic</a>
+                <ul class="nav__list">
+                    <li class="nav__item">About</li>
+                    <li class="nav__item">Skill</li>
+                    <li class="nav__item">Project</li>
+                    <li class="nav__item">Contact</li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>Hero</section>
-            <section>About
-                <img src="./src/img/eb-portfolio.png" alt="Profile photo of Emiri Begic">
-                <p>I'm Emiri, a self-taught front-end developer.
-                    <!--
+        <main class="contents">
+            <header class="contents__hero">Hero</header>
+            <section id="about" class="contents__about">
+                <div class="contents__about__title">About</div>
+                <div class="contents__about__details">
+                    <img class="contents__about__details__img" src="#">
+                    <p class="contents__about__details__description">I'm Emiri, a self-taught front-end developer.
+                        <!--
                 I like to organize things but couldn't find the ideal app (FREE!), so I wanted to create one.<br>
                 This is how my journey to the front-end developer started.<br>
                 I'm Emiri Begic and I'm a self-taught front-end developer!<br>
 
                 My motto is 'Create One If There Is None' -->
-                </p>
+                    </p>
+                </div>
             </section>
-            <section>Project</section>
-            <section>Skill</section>
-            <section>Contact</section>
+            <section id="skills" class="contents__skills">
+                <div class="contents__skills__title">Skills</div>
+                <div class="contents__skills__details">
+                    <div class="contents__skills__details__fe">Front-end</div>
+                    <div class="contents__skills__details__be">Back-end</div>
+                    <div class="contents__skills__details__tools">Tools</div>
+                    <div class="contents__skills__details__others">Others (languages)</div>
+                </div>
+            </section>
+            <section id="projects" class="contents__projects">
+                <div class="contents__projects__title">Projects</div>
+                <div class="contents__projects__details">
+                    <div class="contents__projects__details__item">Project 1</div>
+                    <div class="contents__projects__details__item">Project 2</div>
+                    <div class="contents__projects__details__item">Project 3</div>
+                    <div class="contents__projects__details__item">Project 4</div>
+                </div>
+            </section>
+            <section id="contact" class="contents__contact">Contact</section>
         </main>
-        <footer>emiri begic © 2021</footer>
+        <footer class="page__footer">emiri begic © 2021</footer>
     </div>
 </body>
 

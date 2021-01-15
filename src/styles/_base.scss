@@ -5,6 +5,7 @@ $font-second: 400 1rem 'Bodoni Moda', serif;
 * {
 	margin: 0;
 	padding: 0;
+	border: 1px solid black;
 }
 
 *,
@@ -20,5 +21,15 @@ html {
 body {
 	font: $font-stack;
 	// font: $font-second;
-	background: $primary-color;
+	margin: 1rem;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(10rem, auto));
+	grid-template-rows: repeat(3, minmax(2rem, auto));
+	grid-template-areas:
+		'hd hd hd hd'
+		'ma ma ma ma'
+		'ft ft ft ft';
 }

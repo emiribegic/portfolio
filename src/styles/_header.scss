@@ -1,0 +1,20 @@
+.page__header {
+	grid-area: hd;
+}
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	&__list {
+		display: flex;
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+		padding: 0 1rem;
+	}
+}
