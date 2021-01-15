@@ -1,4 +1,5 @@
 $color-primary: #fff;
+$font-default: 'Anaheim', sans-serif;
 
 * {
 	margin: 0;
@@ -16,5 +17,5 @@ html {
 }
 
 body {
-	font-family: 'Anaheim', sans-serif;
+	font-family: 100% $font-default;
 }
