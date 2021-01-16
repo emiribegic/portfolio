@@ -1,11 +1,12 @@
-$primary-color: rgb(50, 182, 160);
+$color-primary: rgb(245, 230, 244);
+$color-link: rgb(112, 112, 112);
 $font-stack: 400 1rem 'Dosis', sans-serif;
-$font-second: 400 1rem 'Bodoni Moda', serif;
+$font-secondary: 400 1rem 'Bodoni Moda', serif;
 
 * {
 	margin: 0;
 	padding: 0;
-	border: 1px solid black;
+	// border: 1px solid black;
 }
 
 *,
@@ -20,7 +21,6 @@ html {
 
 body {
 	font: $font-stack;
-	// font: $font-second;
 	margin: 1rem;
 }
 
@@ -32,4 +32,36 @@ body {
 		'hd hd hd hd'
 		'ma ma ma ma'
 		'ft ft ft ft';
+	// background-color: $color-primary;
+}
+
+a {
+	text-decoration: none;
+	color: $color-link;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+
+	&:after {
+		content: '';
+		background: $color-link;
+		// mix-blend-mode: exclusion;
+		width: calc(100% + 20px);
+		height: 0px;
+		position: absolute;
+		bottom: -1px;
+		left: -10px;
+		transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+		transform-origin: bottom center;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: #fff;
+		// height: calc(100% + 8px);
+
+		&:after {
+			height: 100%;
+		}
+	}
 }
