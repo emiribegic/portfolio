@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	mode: 'production',
-	entry: './src/index.js',
+	entry: './src/client/app.js',
 	module: {
 		rules: [
 			{
@@ -21,7 +21,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
-			template: './index.html',
+			template: './src/client/views/index.html',
 			filename: './index.html',
 		}),
 	],
