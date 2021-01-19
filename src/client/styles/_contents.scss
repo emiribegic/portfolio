@@ -14,24 +14,31 @@
 
 .contents__hero {
 	grid-area: hr;
-	// height: calc(100vh - 36px);
+	// height: calc(100vh - 36px) - dynamically setup with JS
 	width: 100vw;
 	position: relative;
 	background-color: rgb(241, 189, 224);
 
-	h1 {
+	&__title {
 		display: block;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 	}
 
-	p {
-		display: block;
-		position: absolute;
-		top: 55%;
-		transform: translateY(-55%);
-	}
+	// h1 {
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	transform: translateY(-50%);
+	// }
+
+	// p {
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: 55%;
+	// 	transform: translateY(-55%);
+	// }
 
 	.click-to-scroll {
 		position: absolute;
