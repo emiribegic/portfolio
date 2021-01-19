@@ -13,6 +13,19 @@
 
 .contents__hero {
 	grid-area: hr;
+	height: 100vh;
+	width: 100vw;
+
+	h1,
+	p {
+		position: relative;
+		top: 40vh;
+	}
+
+	.click-to-scroll {
+		position: absolute;
+		top: calc(100% - 2rem);
+	}
 }
 
 .contents__about {
