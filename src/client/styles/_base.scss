@@ -3,6 +3,8 @@ $color-link: rgb(112, 112, 112);
 $font-stack: 400 1rem 'Dosis', sans-serif;
 $font-secondary: 400 1rem 'Bodoni Moda', serif;
 $default-padding: 0.5rem 1rem;
+$default-height: 100vh;
+$default-width: 100vw;
 
 * {
 	margin: 0;
@@ -41,6 +43,11 @@ body {
 
 .default-padding {
 	padding: $default-padding;
+}
+
+.default-dime {
+	height: $default-height;
+	width: $default-width;
 }
 
 a {
