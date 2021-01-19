@@ -2,6 +2,7 @@ $color-primary: rgb(245, 230, 244);
 $color-link: rgb(112, 112, 112);
 $font-stack: 400 1rem 'Dosis', sans-serif;
 $font-secondary: 400 1rem 'Bodoni Moda', serif;
+$default-padding: 0.5rem 1rem;
 
 * {
 	margin: 0;
@@ -21,7 +22,6 @@ html {
 
 body {
 	font: $font-stack;
-	margin: 1rem;
 }
 
 .container {
@@ -32,8 +32,14 @@ body {
 		'hd hd hd hd'
 		'ma ma ma ma'
 		'ft ft ft ft';
-	justify-self: center;
+	align-self: center;
+	margin: 2rem;
+
 	// background-color: $color-primary;
+}
+
+.default-padding {
+	padding: $default-padding;
 }
 
 a {
@@ -42,6 +48,7 @@ a {
 	cursor: pointer;
 	position: relative;
 	z-index: 1;
+	// padding-left: 1rem;
 
 	&:after {
 		content: '';
