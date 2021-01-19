@@ -14,18 +14,29 @@
 
 .contents__hero {
 	grid-area: hr;
-	height: 100vh;
+	// height: calc(100vh - 36px);
 	width: 100vw;
+	position: relative;
+	background-color: green;
 
-	h1,
+	h1 {
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
 	p {
-		position: relative;
-		top: 40vh;
+		display: block;
+		position: absolute;
+		top: 55%;
+		transform: translateY(-55%);
 	}
 
 	.click-to-scroll {
 		position: absolute;
 		top: calc(100% - 2rem);
+		z-index: 1;
 	}
 }
 

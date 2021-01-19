@@ -18,10 +18,12 @@ $default-padding: 0.5rem 1rem;
 
 html {
 	box-sizing: border-box;
+	height: 100%;
 }
 
 body {
 	font: $font-stack;
+	height: 100%;
 }
 
 .container {
@@ -33,7 +35,7 @@ body {
 		'ma ma ma ma'
 		'ft ft ft ft';
 	align-self: center;
-	margin: 2rem;
+	// margin: 2rem;
 
 	// background-color: $color-primary;
 }
@@ -46,7 +48,7 @@ a {
 	text-decoration: none;
 	color: $color-link;
 	cursor: pointer;
-	position: relative;
+	// position: relative;
 	z-index: 1;
 	// padding-left: 1rem;
 
