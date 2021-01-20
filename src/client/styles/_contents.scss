@@ -17,7 +17,7 @@
 	// height: calc(100vh - 36px) - dynamically setup with JS
 	width: 100vw;
 	position: relative;
-	background-color: rgb(241, 189, 224);
+	// background-color: rgb(241, 189, 224);
 
 	&__title {
 		display: block;
@@ -49,6 +49,7 @@
 
 .contents__about {
 	grid-area: ab;
+	position: relative;
 
 	&__title {
 		display: block;
@@ -59,7 +60,9 @@
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
-		margin: 0 auto;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 
 		&__img,
 		&__text {
