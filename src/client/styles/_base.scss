@@ -48,22 +48,6 @@ body {
 	height: $default-height;
 }
 
-// TODO Adjustment needed
-section {
-	padding-bottom: 3rem;
-}
-
-// TODO Adjustment needed
-.section-container {
-	padding: 3rem;
-	margin: 0 auto; // Center vertically
-}
-
-// TODO Change value name
-.pad {
-	padding: 1rem;
-}
-
 a {
 	text-decoration: none;
 	color: $color-link;

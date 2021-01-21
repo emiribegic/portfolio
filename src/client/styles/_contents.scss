@@ -77,29 +77,45 @@
 	grid-area: sk;
 }
 
+// TODO Adjustment needed
+section {
+	padding-bottom: 3rem;
+}
+
+// TODO Adjustment needed
+.section-container {
+	padding: 3rem;
+	margin: 0 auto; // Center vertically
+}
+
+// TODO Change value name
+.pad {
+	padding: 1rem;
+}
+
 .section-main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	gap: 0.5rem;
 	grid-template-areas:
-		'fe be'
-		'to ot';
+		'1 2'
+		'3 4';
 
-	&fe {
-		grid-area: fe;
+	&section-item-1 {
+		grid-area: 1;
 	}
 
-	&be {
-		grid-area: be;
+	&section-item-2 {
+		grid-area: 2;
 	}
 
-	&tools {
-		grid-area: to;
+	&section-item-3 {
+		grid-area: 3;
 	}
 
-	&others {
-		grid-area: ot;
+	&section-item-4 {
+		grid-area: 4;
 	}
 }
 // display: grid;
@@ -146,13 +162,6 @@
 
 .contents__projects {
 	grid-area: pj;
-
-	&__details {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		align-items: center;
-	}
 }
 
 .contents__contact {
