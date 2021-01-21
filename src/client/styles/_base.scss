@@ -27,18 +27,19 @@ body {
 	height: 100%;
 }
 
-.container {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(10rem, auto));
-	grid-template-rows: repeat(3, minmax(2rem, auto));
-	grid-template-areas:
-		'hd hd hd hd'
-		'ma ma ma ma'
-		'ft ft ft ft';
-	// align-self: center;
+// TODO Check if I can delete .container cos no need to have it as grid
+// .container {
+// 	display: grid;
+// 	grid-template-columns: repeat(4, minmax(10rem, auto));
+// 	grid-template-rows: repeat(3, minmax(2rem, auto));
+// 	grid-template-areas:
+// 		'hd hd hd hd'
+// 		'ma ma ma ma'
+// 		'ft ft ft ft';
+// 	// align-self: center;
 
-	// background-color: $color-primary;
-}
+// 	// background-color: $color-primary;
+// }
 
 // .default-padding {
 // 	padding: $default-padding;

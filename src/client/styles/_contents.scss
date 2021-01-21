@@ -47,29 +47,54 @@
 	}
 }
 
-.contents__about {
+// .contents__about {
+// 	grid-area: ab;
+// 	position: relative;
+
+// 	&__title {
+// 		display: block;
+// 	}
+
+// 	&__details {
+// 		display: flex;
+// 		align-items: center;
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+// 		transform: translate(-50%, -50%);
+// 		width: calc(100% - 2rem);
+
+// 		&__img,
+// 		&__text {
+// 			width: 50%;
+// 			margin: 10px;
+// 		}
+// 	}
+// }
+
+.section-about {
 	grid-area: ab;
-	position: relative;
+	// position: relative;
 
-	&__title {
-		display: block;
-	}
-
-	&__details {
+	&.section-main-flex {
 		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: calc(100% - 2rem);
-
-		&__img,
-		&__text {
-			width: 50%;
-			margin: 10px;
-		}
 	}
+
+	// &__details {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	width: calc(100% - 2rem);
+
+	// 	&__img,
+	// 	&__text {
+	// 		width: 50%;
+	// 		margin: 10px;
+	// 	}
+	// }
 }
 
 // TODO cannot use flex to center here
