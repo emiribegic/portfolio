@@ -2,7 +2,7 @@ $color-primary: rgb(245, 230, 244);
 $color-link: rgb(112, 112, 112);
 $font-stack: 400 1rem 'Dosis', sans-serif;
 $font-secondary: 400 1rem 'Bodoni Moda', serif;
-$default-padding: 0.5rem 1rem;
+// $default-padding: 0.5rem 1rem;
 $default-height: 100vh;
 
 * {
@@ -40,12 +40,28 @@ body {
 	// background-color: $color-primary;
 }
 
-.default-padding {
-	padding: $default-padding;
-}
+// .default-padding {
+// 	padding: $default-padding;
+// }
 
 .default-dime {
 	height: $default-height;
+}
+
+// TODO Adjustment needed
+section {
+	padding-bottom: 3rem;
+}
+
+// TODO Adjustment needed
+.section-container {
+	padding: 3rem;
+	margin: 0 auto; // Center vertically
+}
+
+// TODO Change value name
+.pad {
+	padding: 1rem;
 }
 
 a {
