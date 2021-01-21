@@ -11,6 +11,12 @@ module.exports = {
 		libraryTarget: 'var',
 		library: 'Clienet',
 	},
+	stats: 'verbose',
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		compress: true,
+		port: 8080,
+	},
 	module: {
 		rules: [
 			{

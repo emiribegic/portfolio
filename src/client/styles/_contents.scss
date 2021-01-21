@@ -47,6 +47,8 @@
 	}
 }
 
+// TODO Check if i can delete
+
 // .contents__about {
 // 	grid-area: ab;
 // 	position: relative;
@@ -72,10 +74,7 @@
 // 	}
 // }
 
-.section-about {
-	grid-area: ab;
-	// position: relative;
-
+.about {
 	&.section-main-flex {
 		display: flex;
 	}

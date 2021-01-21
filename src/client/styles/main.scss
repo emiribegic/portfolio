@@ -1,4 +1,100 @@
-@import 'base';
+// TODO Temporarily disable, need to enable later
+
+// @import 'base';
 @import 'header';
-@import 'contents';
-@import 'footer';
+// @import 'contents';
+// @import 'footer';
+
+$color-primary: rgb(245, 230, 244);
+$color-link: rgb(112, 112, 112);
+$font-stack: 400 1rem 'Dosis', sans-serif;
+$font-secondary: 400 1rem 'Bodoni Moda', serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font: $font-stack;
+}
+
+a {
+	text-decoration: none;
+	color: $color-link;
+	cursor: pointer;
+	position: relative;
+	z-index: 99;
+
+	&:after {
+		content: '';
+		background: $color-link;
+		width: calc(100% + 20px);
+		height: 0px;
+		position: absolute;
+		bottom: -1px;
+		left: -10px;
+		transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+		transform-origin: bottom center;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: #fff;
+
+		&:after {
+			height: 100%;
+		}
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0.5rem 1rem;
+}
+
+.content {
+	height: 100vh;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+// HERO
+.hero {
+	margin: 0 auto;
+	padding: 2rem;
+	display: grid;
+	grid-template-rows: 2rem auto 2rem;
+	grid-template-columns: 1fr 1rem 1fr;
+	align-items: center;
+
+	&__text {
+		grid-area: 2 / 1 / span 1 / span 1;
+	}
+
+	&__link {
+		grid-area: 3 / 1 / span 1 / span 1;
+	}
+}
+
+.row--flex {
+	display: flex;
+}
+.flex__item {
+	flex: 1 1 auto;
+}
+
+.row-title {
+	margin-bottom: 3rem;
+}

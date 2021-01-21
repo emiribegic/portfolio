@@ -13,60 +13,44 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
-    <header class="page__header">
-        <!-- TODO Items will be populated later with JS-->
-        <!-- TODO Smooth scroll to each section-->
-        <nav class="nav">
-            <a href="#">emiri begic</a>
-            <ul class="nav__list">
-                <li class="nav__item"><a href=#about>About</a></li>
-                <li class="nav__item">Skill</li>
-                <li class="nav__item">Project</li>
-                <li class="nav__item">Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main class="contents">
-        <header class=" contents__hero">
-            <div class="contents__hero__title">
-                <h1>I am Emiri</h1>
-                <p>a Front-end Developer</p>
-            </div>
-            <p class="click-to-scroll">
-                <a href="#about">Click me</a>
-            </p>
+    <div class="container">
+
+        <!-- class OK -->
+        <header class="page-header">
+            <!-- TODO Items will be populated later with JS-->
+            <!-- TODO Smooth scroll to each section-->
+            <nav class="nav">
+                <a href="#">emiri begic</a>
+                <ul class="nav__list">
+                    <li class="nav__item">About</li>
+                    <li class="nav__item">Skill</li>
+                    <li class="nav__item">Project</li>
+                    <li class="nav__item">Contact</li>
+                </ul>
+            </nav>
         </header>
-        </header>
-        <section id="about" class="default-dime section-about">
-            <div class="section-container">
-                <div class="section-header pad">About</div>
-                <div class="section-main-flex pad">
-                    <div class="section-main-flex__c1">
-                        <img src="#">
-                    </div>
-                    <div class="section-main-flex__c2">
-                        <p>I'm Emiri, a self-taught front-end developer in
-                            Germany. I like to organize things and wondered if I could make my own To-Do app to make
-                            my
-                            life
-                            easier.
-                            Since then coding (especially JavaScript!) has triggered my curiosity and it was enough
-                            to
-                            motivate me to change my career to IT. My goal as front-end developer is to make modern
-                            web
-                            applications that make our lives a bit easier!
-                        </p>
-                    </div>
+        <main class="page-contents">
+            <section class="hero">
+                <!-- <div class="wrapper"> -->
+                <div class="hero__text">
+                    <h1>I am Emiri</h1>
+                    <p>a Front-end Developer</p>
                 </div>
-            </div>
-            <!-- <div class="section-container">
-                    <div class="section-header pad">About</div>
-                    <div class="contents__about__details">
-                        <div class="contents__about__details__img">
+                <div class="hero__link">
+                    Click me
+                </div>
+                <!-- </div> -->
+            </section>
+            <section id="about" class="about content">
+                <div class="wrapper">
+                    <div class="row-title">
+                        <h2>About</h2>
+                    </div>
+                    <div class="row row--flex">
+                        <div class="flex__item">
                             <img src="#">
                         </div>
-                        <div class="contents__about__details__text">
+                        <div class="flex__item">
                             <p>I'm Emiri, a self-taught front-end developer in
                                 Germany. I like to organize things and wondered if I could make my own To-Do app to make
                                 my
@@ -80,39 +64,45 @@
                             </p>
                         </div>
                     </div>
-                </div> -->
-        </section>
-        <section id="skills" class=" default-dime contents-skills">
-            <div class="section-container">
-                <div class="section-header pad">Skills</div>
-                <div class="section-main pad">
-                    <div class="section-item-1 fe">Front-end</div>
-                    <div class="section-item-2 be">Back-end</div>
-                    <div class="section-item-3 tos">Tools</div>
-                    <div class="section-item-4 ots">Others (languages)</div>
                 </div>
-            </div>
-        </section>
-        <section id="projects" class=" default-dime contents__projects">
-            <div class="section-container">
-                <div class="section-header pad">Projects</div>
-                <div class="section-main pad">
-                    <div class="section-item-1 p1">Project 1</div>
-                    <div class="section-item-2 p2">Project 2</div>
-                    <div class="section-item-3 p3">Project 3</div>
-                    <div class="section-item-4 p4">Project 4</div>
+            </section>
+            <section id="skills" class="skills content">
+                <div class="wrapper">
+                    <div class="row">
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="row">
+                        <div class="TODO">Front-end</div>
+                        <div class="TODO">Back-end</div>
+                        <div class="TODO">Tools</div>
+                        <div class="TODO">Others (languages)</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="contact" class=" contents__contact">
-            <div class="contents__contact__title">Contact</div>
-            <div class="contents__contact__details">
-                Email me here
-            </div>
-        </section>
-    </main>
-    <footer class=" page__footer">emiri begic © 2021</footer>
-    <!-- </div> -->
+            </section>
+            <section id="projects" class="projects content">
+                <div class="wrapper">
+                    <div class="row">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="row">
+                        <div class="TODO">Project 1</div>
+                        <div class="TODO">Project 2</div>
+                        <div class="TODO">Project 3</div>
+                        <div class="TODO">Project 4</div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <div class="wrapper">
+                    <div class="row">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="row">Email me here</div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">emiri begic © 2021</footer>
+    </div>
 </body>
 
 </html>
