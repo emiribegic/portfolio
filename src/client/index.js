@@ -11,8 +11,8 @@ window.addEventListener('load', () => {
 	const headerHeight = header.offsetHeight;
 	const footerHeight = footer.offsetHeight;
 	console.log(headerHeight, footerHeight);
-	hero.style.height = `calc(100vh - 0.5rem - ${headerHeight}px)`;
-	contact.style.height = `calc(100vh - 0.5rem - ${footerHeight}px)`;
+	hero.style.height = `calc(100vh - 1rem - ${headerHeight}px)`;
+	contact.style.height = `calc(100vh - 1rem - ${footerHeight}px)`;
 });
 
 export { example };

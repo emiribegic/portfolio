@@ -2,13 +2,11 @@ $color-primary: rgb(245, 230, 244);
 $color-link: rgb(112, 112, 112);
 $font-stack: 400 1rem 'Dosis', sans-serif;
 $font-secondary: 400 1rem 'Bodoni Moda', serif;
-// $default-padding: 0.5rem 1rem;
-$default-height: 100vh;
 
 * {
 	margin: 0;
 	padding: 0;
-	border: 1px solid black;
+	// border: 1px solid black;
 }
 
 *,
@@ -19,35 +17,10 @@ $default-height: 100vh;
 
 html {
 	box-sizing: border-box;
-	height: 100%;
 }
 
 body {
 	font: $font-stack;
-	height: 100%;
-}
-
-// TODO Check if I can delete .container cos no need to have it as grid
-
-// .container {
-// 	display: grid;
-// 	grid-template-columns: repeat(4, minmax(10rem, auto));
-// 	grid-template-rows: repeat(3, minmax(2rem, auto));
-// 	grid-template-areas:
-// 		'hd hd hd hd'
-// 		'ma ma ma ma'
-// 		'ft ft ft ft';
-// 	// align-self: center;
-
-// 	// background-color: $color-primary;
-// }
-
-// .default-padding {
-// 	padding: $default-padding;
-// }
-
-.default-dime {
-	height: $default-height;
 }
 
 a {
@@ -56,12 +29,10 @@ a {
 	cursor: pointer;
 	position: relative;
 	z-index: 99;
-	// padding-left: 1rem;
 
 	&:after {
 		content: '';
 		background: $color-link;
-		// mix-blend-mode: exclusion;
 		width: calc(100% + 20px);
 		height: 0px;
 		position: absolute;
@@ -74,7 +45,6 @@ a {
 
 	&:hover {
 		color: #fff;
-		// height: calc(100% + 8px);
 
 		&:after {
 			height: 100%;
