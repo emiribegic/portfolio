@@ -1,5 +1,8 @@
 import './styles/main.scss';
 import profileImage from './img/eb-profile-img.png';
+import ghImage from './img/github.svg';
+import inImage from './img/linkedin.svg';
+import twImage from './img/twitter.svg';
 import translateToGerman from './js/translateButton';
 
 const header = document.querySelector('.page-header');
@@ -19,3 +22,12 @@ window.addEventListener('load', () => {
 // Images
 const profileImg = document.getElementById('profile-img');
 profileImg.src = profileImage;
+
+const ghImg = document.getElementById('gh-img');
+ghImg.src = ghImage;
+
+const inImg = document.getElementById('in-img');
+inImg.src = inImage;
+
+const twImg = document.getElementById('tw-img');
+twImg.src = twImage;
