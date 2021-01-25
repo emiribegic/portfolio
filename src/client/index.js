@@ -1,6 +1,6 @@
-// import { example } from './js/example';
 import './styles/main.scss';
 import profileImage from './img/eb-profile-img.png';
+import translateToGerman from './js/translateButton';
 
 const header = document.querySelector('.page-header');
 const hero = document.querySelector('.hero');
@@ -16,7 +16,6 @@ window.addEventListener('load', () => {
 	contact.style.height = `calc(100vh - 1rem - ${footerHeight}px)`;
 });
 
-// export { example };
-
+// Images
 const profileImg = document.getElementById('profile-img');
 profileImg.src = profileImage;
