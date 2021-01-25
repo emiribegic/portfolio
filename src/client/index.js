@@ -1,4 +1,4 @@
-import { example } from './js/example';
+// import { example } from './js/example';
 import './styles/main.scss';
 
 const header = document.querySelector('.page-header');
@@ -15,4 +15,4 @@ window.addEventListener('load', () => {
 	contact.style.height = `calc(100vh - 1rem - ${footerHeight}px)`;
 });
 
-export { example };
+// export { example };
