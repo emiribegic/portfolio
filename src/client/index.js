@@ -1,5 +1,6 @@
 // import { example } from './js/example';
 import './styles/main.scss';
+import profileImage from './img/eb-profile-img.png';
 
 const header = document.querySelector('.page-header');
 const hero = document.querySelector('.hero');
@@ -16,3 +17,6 @@ window.addEventListener('load', () => {
 });
 
 // export { example };
+
+const profileImg = document.getElementById('profile-img');
+profileImg.src = profileImage;

@@ -23,6 +23,12 @@ body {
 	font: $font-stack;
 }
 
+img {
+	width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
 a {
 	text-decoration: none;
 	color: $color-link;
