@@ -74,10 +74,12 @@ img {
 	transition: background 250ms ease-in-out, transform 150ms ease;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-}
 
-.btn:hover {
-	background: $color-link;
-	color: #fff;
-	border: 1px solid $color-link;
+	&:hover {
+		background: $color-link;
+		color: #fff;
+		border: 1px solid $color-link;
+	}
+
+	// TODO Blue line after clicking buttons
 }

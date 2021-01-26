@@ -1,6 +1,6 @@
 import './styles/main.scss';
 import profileImage from './img/eb-profile-img.png';
-import translateToGerman from './js/translateButton';
+import translateText from './js/translateButton';
 
 const header = document.querySelector('.page-header');
 const hero = document.querySelector('.hero');

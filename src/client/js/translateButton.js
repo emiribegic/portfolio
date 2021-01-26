@@ -3,7 +3,7 @@ const btnEng = document.querySelector('.btn-eng');
 const btnGer = document.querySelector('.btn-ger');
 const btnJap = document.querySelector('.btn-jap');
 
-const translateToGerman = btnGer.addEventListener('click', function () {
+const translateText = btnGer.addEventListener('click', function () {
 	aboutText.innerHTML = `<p>
     <h3>Ich bin Emiri</h3>, a self-taught front-end developer in
     Germany.<br>
@@ -21,4 +21,4 @@ const translateToGerman = btnGer.addEventListener('click', function () {
     <p>Translate in:</p>`;
 });
 
-export { translateToGerman };
+export { translateText };
