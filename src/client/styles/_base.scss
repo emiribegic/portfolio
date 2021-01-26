@@ -1,7 +1,7 @@
 $color-primary: rgb(245, 230, 244);
 $color-link: rgb(112, 112, 112);
 $font-stack: 400 1rem 'Dosis', sans-serif;
-$font-secondary: 400 1rem 'Bodoni Moda', serif;
+$font-btn: 400 0.8rem 'Dosis', sans-serif;
 
 * {
 	margin: 0;
@@ -56,4 +56,36 @@ img {
 			height: 100%;
 		}
 	}
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	border-radius: 100px;
+	width: 80px;
+	text-decoration: none;
+	padding: 0 0.5rem;
+	background: #0069ed;
+	color: #ffffff;
+	font: $font-btn;
+	margin: 0 0.5rem;
+	cursor: pointer;
+	text-align: center;
+	transition: background 250ms ease-in-out, transform 150ms ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.btn:hover,
+.btn:focus {
+	background: #0053ba;
+}
+
+.btn:focus {
+	outline: 1px solid #fff;
+	outline-offset: -4px;
+}
+
+.btn:active {
+	transform: scale(0.99);
 }
