@@ -46,12 +46,21 @@
 	border-radius: 10% 30% 50% 70%;
 }
 
-h3 {
-	display: inline-block;
-}
+// h3 {
+// 	display: inline-block;
+// }
 
 .about-text {
 	text-align: justify;
 	text-justify: inter-word;
-	line-height: 1.5rem;
+	// line-height: 1.5rem;
+}
+
+p {
+	margin-bottom: 0.85rem;
+}
+
+.about-btns {
+	display: flex;
+	justify-content: space-between;
 }
