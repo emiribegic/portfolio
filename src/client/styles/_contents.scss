@@ -66,19 +66,27 @@ p {
 }
 
 // SKILLS
-.dropcap {
-	font-weight: 800;
-	letter-spacing: 5px;
-	// font-stretch: 200%;
+.skills__item {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+
+	&__title {
+		font-weight: 800;
+		letter-spacing: 5px;
+		margin: 0 auto;
+
+		&:first-letter {
+			// text-decoration: underline;
+			float: left;
+			font-size: 3rem;
+			line-height: 2.5rem;
+		}
+	}
 }
 
 // not like this need to check the right usage
-.dropcap:first-child:first-letter {
-	// text-decoration: underline;
-	float: left;
-	font-size: 3rem;
-	line-height: 2.5rem;
-}
 
 .icon {
 	display: inline-block;
