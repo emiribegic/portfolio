@@ -165,3 +165,18 @@
 	// TODO for bigger screen maybe
 	// max-width: 80%;
 }
+
+// CONTACT
+.link-contact {
+	display: inline-block;
+	font-size: 0.75rem;
+	text-decoration: none;
+	padding: 0.5rem;
+	border: 1px solid black;
+
+	span {
+		display: inline-block;
+		padding: 0rem;
+		vertical-align: middle;
+	}
+}

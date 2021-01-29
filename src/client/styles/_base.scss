@@ -63,6 +63,7 @@ ul {
 	}
 }
 
+// TODO Blue line after clicking buttons
 .btn {
 	display: inline-block;
 	border: 1px solid #000;
@@ -85,6 +86,10 @@ ul {
 		color: #fff;
 		border: 1px solid $color-link;
 	}
+}
 
-	// TODO Blue line after clicking buttons
+// Feather icons
+.feather {
+	display: inline-block;
+	vertical-align: middle;
 }
