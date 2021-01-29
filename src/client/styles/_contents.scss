@@ -125,9 +125,49 @@
 
 // PROJECTS
 .project-img {
-	margin-bottom: 1.5rem;
+	margin: 0 auto 1rem auto;
+	max-width: 80%;
 }
+
+// #project-img-1,
+// #project-img-3 {
+// 	border-radius: 30% 60% 40% 60% / 40% 50% 40% 60%;
+// }
+
+// #project-img-4 {
+// 	border-radius: 40% 30% 40% 30%;
+// }
 
 .align-center {
 	text-align: center;
+	// margin-bottom: 1.5rem;
+}
+.project-detail__title {
+	// font-weight: 400;
+	margin: 0 auto 0.5rem auto;
+}
+
+.project-detail__stack {
+	margin: 0 auto 1rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__item {
+		font-size: 0.75rem;
+		letter-spacing: 0.05rem;
+		margin: 0.1rem 0.25rem;
+		// margin-bottom: 0;
+		// padding: 0 1rem;
+		text-transform: uppercase;
+		// background: rgba(226, 223, 219, 0.7);
+	}
+}
+
+.project-detail__text {
+	margin: 0 auto;
+}
+
+.project-detail__gh {
+	margin: 2rem auto;
 }

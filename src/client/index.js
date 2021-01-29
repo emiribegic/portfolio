@@ -1,7 +1,6 @@
 import './styles/main.scss';
 import profileImage from './img/eb-profile-img.png';
 import projectImage1 from './img/eb-travel-app.png';
-import projectImage2 from './img/eb-sentiment-analysis-app.png';
 import projectImage3 from './img/eb-weather-journal-app.png';
 import projectImage4 from './img/eb-personal-blog.png';
 import translateText from './js/translateButton';
@@ -26,9 +25,6 @@ profileImg.src = profileImage;
 
 const projectImg1 = document.getElementById('project-img-1');
 projectImg1.src = projectImage1;
-
-const projectImg2 = document.getElementById('project-img-2');
-projectImg2.src = projectImage2;
 
 const projectImg3 = document.getElementById('project-img-3');
 projectImg3.src = projectImage3;
