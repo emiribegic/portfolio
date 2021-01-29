@@ -89,6 +89,13 @@
 	}
 }
 
+.grid__item__text {
+	font-size: 0.75rem;
+	letter-spacing: 0.05rem;
+	margin: 0.1rem 0.25rem;
+	text-transform: uppercase;
+}
+
 .fe {
 	background: blue;
 	border: 1px solid blue;
@@ -112,21 +119,9 @@
 	border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
 }
 
-.icon {
-	display: inline-block;
-	padding: 0;
-	width: 3rem;
-}
-
-.icons8 {
-	display: inline-block;
-	vertical-align: middle;
-}
-
 // PROJECTS
 .project-img {
-	margin: 0 auto 1rem auto;
-	max-width: 80%;
+	margin-bottom: 1rem;
 }
 
 // #project-img-1,
@@ -144,7 +139,7 @@
 }
 .project-detail__title {
 	// font-weight: 400;
-	margin: 0 auto 0.5rem auto;
+	margin: 0 auto 1rem auto;
 }
 
 .project-detail__stack {
@@ -157,17 +152,16 @@
 		font-size: 0.75rem;
 		letter-spacing: 0.05rem;
 		margin: 0.1rem 0.25rem;
-		// margin-bottom: 0;
-		// padding: 0 1rem;
 		text-transform: uppercase;
-		// background: rgba(226, 223, 219, 0.7);
 	}
 }
 
 .project-detail__text {
-	margin: 0 auto;
+	margin: 0 auto 2rem auto;
 }
 
-.project-detail__gh {
-	margin: 2rem auto;
+.card {
+	padding: 2rem;
+	// TODO for bigger screen maybe
+	// max-width: 80%;
 }
