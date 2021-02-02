@@ -8,6 +8,10 @@ section {
 	padding: 2rem;
 }
 
+.heading-2 {
+	margin-bottom: 3rem;
+}
+
 // Hero
 .hero {
 	display: grid;
@@ -28,10 +32,6 @@ section {
 
 // About
 .about {
-	&__heading {
-		margin-bottom: 3rem;
-	}
-
 	&__grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -58,34 +58,29 @@ section {
 	}
 }
 
-// TODO from here for revision
-
-// .about-text {
-// 	text-align: justify;
-// 	text-justify: inter-word;
-// 	// line-height: 1.5rem;
-// }
-
-// .about-text__p {
-// 	margin-bottom: 0.85rem;
-// }
-
-.about-btns {
-	display: flex;
-	justify-content: space-between;
-}
-
 // SKILLS
-.skills__item {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	text-align: center;
-	margin-bottom: 1rem;
-	// border-radius: 10% 30% 50% 70%;
-	padding: 5rem;
+.skills {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 1rem;
+		grid-row-gap: 1rem;
+		justify-items: center;
+		align-items: center;
+		margin-bottom: 3rem;
+	}
 
-	&__title {
+	&__item {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+		margin-bottom: 1rem;
+		// border-radius: 10% 30% 50% 70%;
+		padding: 5rem;
+	}
+
+	&__heading {
 		font-weight: 800;
 		letter-spacing: 5px;
 		margin: 0 auto 1rem auto;
@@ -97,37 +92,39 @@ section {
 			line-height: 2.5rem;
 		}
 	}
+
+	&__stack {
+		font-size: 0.75rem;
+		letter-spacing: 0.05rem;
+		margin: 0.1rem 0.25rem;
+		text-transform: uppercase;
+	}
+
+	.fe {
+		background: blue;
+		border: 1px solid blue;
+		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+		color: #fff;
+	}
+
+	.be {
+		background: red;
+		border: 1px solid red;
+	}
+
+	.to {
+		background: rgb(255, 217, 0);
+		border: 1px solid rgb(255, 217, 0);
+	}
+
+	.ot {
+		background: rgb(182, 145, 96);
+		border: 1px solid rgb(182, 145, 96);
+		border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
+	}
 }
 
-.grid__item__text {
-	font-size: 0.75rem;
-	letter-spacing: 0.05rem;
-	margin: 0.1rem 0.25rem;
-	text-transform: uppercase;
-}
-
-.fe {
-	background: blue;
-	border: 1px solid blue;
-	border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-	color: #fff;
-}
-
-.be {
-	background: red;
-	border: 1px solid red;
-}
-
-.to {
-	background: rgb(255, 217, 0);
-	border: 1px solid rgb(255, 217, 0);
-}
-
-.ot {
-	background: rgb(182, 145, 96);
-	border: 1px solid rgb(182, 145, 96);
-	border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
-}
+// TODO from here for revision
 
 // PROJECTS
 .project-img {
