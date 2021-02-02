@@ -1,16 +1,15 @@
-.page-footer {
+.footer {
 	margin: 0 auto;
 	padding: 1rem 2rem;
 	text-align: center;
-}
 
-.nav-ft {
-	padding: 0 8rem;
+	&__nav {
+		padding: 0 8rem;
+	}
 
 	&__list {
 		display: flex;
 		justify-content: center;
-		// list-style: none;
 		border-top: 1px #777 dotted;
 	}
 

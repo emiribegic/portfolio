@@ -4,7 +4,7 @@ import projectImage1 from './img/eb-travel-app.png';
 import projectImage3 from './img/eb-weather-journal-app.png';
 import projectImage4 from './img/eb-personal-blog.png';
 
-const header = document.querySelector('.page-header');
+const header = document.querySelector('.header');
 const hero = document.querySelector('.hero');
 
 // Dynamically get the height of the header and calculate the hight of hero
