@@ -3,7 +3,6 @@ import profileImage from './img/eb-profile-img.png';
 import projectImage1 from './img/eb-travel-app.png';
 import projectImage3 from './img/eb-weather-journal-app.png';
 import projectImage4 from './img/eb-personal-blog.png';
-import translateText from './js/translateButton';
 
 const header = document.querySelector('.page-header');
 const hero = document.querySelector('.hero');
