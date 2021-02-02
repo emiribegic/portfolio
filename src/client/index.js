@@ -6,7 +6,7 @@ import projectImage4 from './img/eb-personal-blog.png';
 import translateText from './js/translateButton';
 
 const header = document.querySelector('.page-header');
-const hero = document.querySelector('.grid--hero');
+const hero = document.querySelector('.hero');
 
 // Dynamically get the height of the header and calculate the hight of hero
 window.addEventListener('load', () => {
@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 });
 
 // Images
-const profileImg = document.getElementById('profile-img');
+const profileImg = document.querySelector('.about__img');
 profileImg.src = profileImage;
 
 const projectImg1 = document.getElementById('project-img-1');
