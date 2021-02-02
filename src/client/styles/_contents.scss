@@ -124,8 +124,6 @@ section {
 	}
 }
 
-// TODO from here for revision
-
 // PROJECTS
 .projects {
 	&__grid {
@@ -185,7 +183,13 @@ section {
 	}
 }
 
+// TODO from here for revision
 // CONTACT
+.contact {
+	&__mail {
+		text-align: center;
+	}
+}
 .link-contact {
 	display: inline-block;
 	font-size: 0.75rem;
