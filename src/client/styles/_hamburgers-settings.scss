@@ -1,0 +1,16 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+
+.hamburger {
+	&:focus {
+		outline: none;
+	}
+}

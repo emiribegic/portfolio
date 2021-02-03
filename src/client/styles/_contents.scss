@@ -1,14 +1,8 @@
+// Desktop
 .container {
 	margin: 0 auto;
 	padding: 0.5rem 1rem;
 }
-
-// .container {
-// 	margin: 0 auto;
-// 	padding: 0.5rem 1rem;
-// }
-
-// TODO 2/3 from here for revision
 
 section {
 	margin: 0 auto;
@@ -207,5 +201,13 @@ section {
 		display: inline-block;
 		padding: 0rem;
 		vertical-align: middle;
+	}
+}
+
+// Small screens
+@media only screen and (max-width: 720px) {
+	.container {
+		margin: 0 auto;
+		padding: 1rem;
 	}
 }

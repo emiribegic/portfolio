@@ -26,3 +26,11 @@ projectImg3.src = projectImage3;
 
 const projectImg4 = document.getElementById('project-img-4');
 projectImg4.src = projectImage4;
+
+// Hamburger
+const hamburger = document.querySelector('.hamburger');
+const headerList = document.querySelector('.header__list');
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('is-active');
+	headerList.classList.toggle('show');
+});
