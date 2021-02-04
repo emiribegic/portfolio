@@ -7,7 +7,8 @@
  */
 
 $hamburger-layer-width: 20px;
-$hamburger-layer-height: 2px;
+$hamburger-layer-height: 1px;
+$hamburger-padding-x: 0px;
 
 .hamburger {
 	&:focus {
