@@ -30,6 +30,7 @@
 
 // Small screens
 @media only screen and (max-width: 720px) {
+	// TODO How to make not scrollable when nav is open?
 	// Prevent from scrolling
 	// body {
 	// 	overflow-x: hidden;
@@ -60,12 +61,12 @@
 			height: calc(100vh - 8vh - 1rem);
 			// nav vh + container pad
 			top: calc(8vh + 1rem);
-			background: pink;
+			background: #fff;
 			z-index: 3;
 			transform: translateX(100%);
-			transition: transform 0.5s ease-in;
+			transition: transform 0.3s ease-in;
 
-			// Show by clicking the hamburger menu
+			// Show list items by clicking the hamburger menu
 			&.show {
 				transform: translateX(0%);
 			}
@@ -75,6 +76,15 @@
 			display: inline-block;
 			padding: 1rem 0;
 			opacity: 0;
+		}
+	}
+
+	@keyframes navItemFade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 100;
 		}
 	}
 }
