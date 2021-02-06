@@ -1,12 +1,15 @@
 // Desktop
 .container {
 	margin: 0 auto;
-	padding: 0.5rem 1rem;
+	padding: 1rem 2rem;
 }
 
 section {
-	margin: 0 auto;
-	padding: 2rem;
+	margin: 0 auto 3rem auto;
+
+	&:nth-child(1) {
+		margin-bottom: 0;
+	}
 }
 
 .heading-2 {
@@ -15,14 +18,13 @@ section {
 
 // Hero
 .hero {
-	// 100 - nav height - nav pad - container pad
-	height: calc(100vh - 8vh - 1rem - 1rem - 0.5rem);
+	// 100 - nav height - container pad
+	height: calc(100vh - 8vh - 1rem);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-column-gap: 1rem;
 	align-items: center;
-	grid-template-rows: 2rem auto 2rem;
-	padding: 0 2rem;
+	grid-template-rows: 2rem auto 8vh;
 
 	&__heading {
 		grid-area: 2 / 1 / span 1 / span 1;
@@ -37,7 +39,7 @@ section {
 .about {
 	&__grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-column-gap: 1rem;
 		grid-row-gap: 1rem;
 		justify-items: center;
@@ -46,14 +48,20 @@ section {
 	}
 
 	&__img {
-		// max-height: 290px;
-		// width: auto;
 		border-radius: 10% 30% 50% 70%;
+
+		@media only screen and (min-width: 350px) and (max-width: 579px) {
+			width: 80%;
+		}
 	}
 
 	&__text {
 		text-align: justify;
 		text-justify: inter-word;
+
+		@media only screen and (min-width: 350px) and (max-width: 579px) {
+			width: 80%;
+		}
 
 		p {
 			margin-bottom: 0.85rem;
@@ -65,12 +73,16 @@ section {
 .skills {
 	&__grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-column-gap: 1rem;
 		grid-row-gap: 1rem;
 		justify-items: center;
 		align-items: center;
 		margin-bottom: 3rem;
+
+		@media only screen and (min-width: 846px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	&__item {
@@ -118,12 +130,20 @@ section {
 	.to {
 		background: rgb(255, 217, 0);
 		border: 1px solid rgb(255, 217, 0);
+
+		@media only screen and (max-width: 579px) {
+			border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
+		}
 	}
 
 	.ot {
 		background: rgb(182, 145, 96);
 		border: 1px solid rgb(182, 145, 96);
 		border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
+
+		@media only screen and (max-width: 579px) {
+			border-radius: 0;
+		}
 	}
 }
 
@@ -131,7 +151,7 @@ section {
 .projects {
 	&__grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-column-gap: 1rem;
 		grid-row-gap: 1rem;
 		justify-items: center;
@@ -146,6 +166,10 @@ section {
 		margin: 1rem;
 		margin-top: 0;
 
+		@media only screen and (min-width: 409px) and (max-width: 579px) {
+			max-width: 80%;
+		}
+
 		// Set the GH link at the bottom
 		p {
 			margin-top: auto;
@@ -154,8 +178,8 @@ section {
 
 	&__img {
 		margin-bottom: 1rem;
-		max-width: 374px;
-		height: auto;
+		// max-width: 374px;
+		// height: auto;
 	}
 
 	&__heading {
@@ -207,9 +231,8 @@ section {
 }
 
 // Small screens
-@media only screen and (max-width: 720px) {
-	.container {
-		margin: 0 auto;
-		padding: 1rem;
-	}
-}
+// @media only screen and (min-width: 846px) {
+// 	.container {
+// 		margin: 0 auto;
+// 	}
+// }
