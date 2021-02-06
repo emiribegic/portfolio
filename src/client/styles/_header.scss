@@ -25,6 +25,10 @@
 	&__item {
 		display: inline-block;
 		padding-left: 1rem;
+
+		&:nth-child(1) {
+			display: none;
+		}
 	}
 }
 
@@ -101,6 +105,12 @@
 			display: inline-block;
 			padding: 1rem 0;
 			opacity: 0;
+
+			&:nth-child(1) {
+				display: inline-block;
+				padding: 1rem 0;
+				opacity: 0;
+			}
 		}
 	}
 
