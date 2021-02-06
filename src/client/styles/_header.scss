@@ -54,6 +54,9 @@
 		.hamburger {
 			display: block;
 			z-index: 4;
+			// Fix at top right corner when scrolling
+			position: fixed;
+			right: 1rem;
 		}
 
 		// Slide in from right
