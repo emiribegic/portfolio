@@ -10,7 +10,7 @@ import projectImage1 from './img/eb-travel-app.png';
 import projectImage3 from './img/eb-weather-journal-app.png';
 import projectImage4 from './img/eb-personal-blog.png';
 
-const profileImg = document.querySelector('.about__img');
+const profileImg = document.getElementById('about__img');
 profileImg.src = profileImage;
 
 const projectImg1 = document.getElementById('project-img-1');
