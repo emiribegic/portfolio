@@ -1,7 +1,5 @@
-// Desktop
 .header {
 	margin: 0 auto;
-	// padding: 1rem 2rem;
 
 	&__nav {
 		display: flex;
@@ -32,17 +30,9 @@
 	}
 }
 
-// Small screens
-@media only screen and (max-width: 720px) {
-	// TODO How to make not scrollable when nav is open?
-	// Prevent from scrolling
-	// body {
-	// 	overflow-x: hidden;
-	// }
-
+@media only screen and (max-width: 767px) {
 	.header {
 		margin: 0 auto;
-		padding: 0;
 
 		&__nav {
 			display: flex;
@@ -50,7 +40,7 @@
 			align-items: center;
 		}
 
-		// Show hamburger menu
+		// Hamburger menu
 		.hamburger {
 			display: block;
 			z-index: 4;

@@ -1,7 +1,15 @@
 $color-primary: rgb(245, 230, 244);
 $color-link: rgb(112, 112, 112);
+
+// Typography
 $font-stack: 400 1rem 'Dosis', sans-serif;
 $font-btn: 400 0.8rem 'Dosis', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75rem; // 1200px
+$bp-large: 62rem; // 992px
+$bp-medium: 48rem; // 768px;
+$bp-small: 30rem; // 480px;
 
 * {
 	margin: 0;
@@ -21,6 +29,13 @@ html {
 
 body {
 	font: $font-stack;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 400;
 }
 
 img {
