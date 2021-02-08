@@ -1,20 +1,66 @@
 .container {
 	margin: 0 auto;
 	padding: 1rem 2rem;
+
+	/////Experiment
+	@media only screen and (min-width: $bp-large) {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-column-gap: 2vw;
+		grid-template-rows: minmax(8vh, 1fr);
+		justify-items: center;
+		padding: 4rem;
+		padding-bottom: 0;
+	}
+}
+
+/////Experiment
+main {
+	@media only screen and (min-width: $bp-large) {
+		display: grid;
+		grid-template-columns: 1;
+	}
 }
 
 section {
-	margin: 0 auto 3rem auto;
+	margin-bottom: 3rem;
+
+	&:nth-child(1) {
+		margin-bottom: 0;
+	}
+
+	/////Experiment
+	@media only screen and (min-width: $bp-large) {
+		margin: 0;
+	}
 }
 
 .heading-2 {
 	margin-bottom: 3rem;
+	@media only screen and (min-width: $bp-large) {
+		display: flex;
+		justify-content: center;
+	}
+
+	.section-heading {
+		@media only screen and (min-width: $bp-large) {
+			display: inline-block;
+			padding-bottom: 0.5rem;
+			border-bottom: 1px solid #777;
+		}
+	}
 }
 
 // Hero
 .hero {
 	// 100 - nav height - container pad
 	height: calc(100vh - 8vh - 1rem);
+	display: flex;
+	align-items: center;
+
+	@media only screen and (min-width: $bp-large) {
+		height: calc(100vh - 2rem);
+	}
 }
 
 // About
@@ -30,6 +76,14 @@ section {
 			grid-template-columns: repeat(2, 1fr);
 			grid-column-gap: 1rem;
 			padding: 0 1rem;
+		}
+
+		/////Experiment
+		@media only screen and (min-width: $bp-large) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 1rem;
+			padding: 0 1rem;
+			margin-bottom: 6rem;
 		}
 	}
 
@@ -55,9 +109,10 @@ section {
 			margin: 1rem;
 		}
 
-		@media only screen and (min-width: $bp-large) {
-			padding-right: 4rem;
-		}
+		/////Experiment TODO Later avtivate it
+		// @media only screen and (min-width: $bp-large) {
+		// 	padding-right: 4rem;
+		// }
 
 		p {
 			margin-bottom: 0.85rem;
@@ -81,8 +136,10 @@ section {
 		}
 
 		@media only screen and (min-width: $bp-large) {
-			grid-template-columns: repeat(2, 30rem);
+			////Experriment
+			grid-template-columns: repeat(2, 1fr);
 			justify-content: center;
+			margin-bottom: 6rem;
 		}
 	}
 
@@ -92,7 +149,11 @@ section {
 		flex-wrap: wrap;
 		text-align: center;
 		margin: 1rem;
-		padding: 5rem;
+		padding: 3rem;
+
+		@media only screen and (min-width: $bp-small) {
+			padding: 5rem;
+		}
 	}
 
 	&__heading {
@@ -157,8 +218,12 @@ section {
 		@media only screen and (min-width: $bp-medium) {
 			grid-template-columns: repeat(2, 1fr);
 			grid-column-gap: 1rem;
-			padding: 0 1rem;
 			align-items: stretch;
+			padding: 0 1rem;
+
+			@media only screen and (min-width: $bp-large) {
+				margin-bottom: 6rem;
+			}
 		}
 
 		// @media only screen and (min-width: $bp-large) {
