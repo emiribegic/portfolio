@@ -1,24 +1,23 @@
+// CONTAINER
 .container {
 	margin: 0 auto;
 	padding: 1rem 2rem;
 
-	/////Experiment
 	@media only screen and (min-width: $bp-large) {
 		display: grid;
-		grid-template-columns: 1fr 3fr;
+		grid-template-columns: 1fr 5fr;
 		grid-column-gap: 2vw;
 		grid-template-rows: minmax(8vh, 1fr);
 		justify-items: center;
-		padding: 4rem;
+		padding: 4rem 5rem;
 		padding-bottom: 0;
 	}
 }
 
-/////Experiment
 main {
 	@media only screen and (min-width: $bp-large) {
 		display: grid;
-		grid-template-columns: 1;
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -29,9 +28,21 @@ section {
 		margin-bottom: 0;
 	}
 
-	/////Experiment
+	&:nth-child(5) {
+		margin-bottom: 0;
+	}
+
 	@media only screen and (min-width: $bp-large) {
 		margin: 0;
+		margin-bottom: 6rem;
+
+		&:nth-child(1) {
+			margin-bottom: 0;
+		}
+
+		&:nth-child(5) {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -51,23 +62,24 @@ section {
 	}
 }
 
-// Hero
+// HERO SECTION
 .hero {
-	// 100 - nav height - container pad
+	// 100vh - header height - container pad
 	height: calc(100vh - 8vh - 1rem);
 	display: flex;
 	align-items: center;
 
 	@media only screen and (min-width: $bp-large) {
+		// 100vh - container pad
 		height: calc(100vh - 4rem);
 	}
 }
 
-// About
+// ABOUT SECTION
 .about {
 	&__grid {
 		display: grid;
-		grid-template-columns: 1;
+		grid-template-columns: 1fr;
 		grid-row-gap: 1rem;
 		align-items: center;
 		justify-items: center;
@@ -78,12 +90,10 @@ section {
 			padding: 0 1rem;
 		}
 
-		/////Experiment
 		@media only screen and (min-width: $bp-large) {
 			grid-template-columns: repeat(2, 1fr);
 			grid-column-gap: 1rem;
 			padding: 0 1rem;
-			margin-bottom: 6rem;
 		}
 	}
 
@@ -111,11 +121,11 @@ section {
 	}
 }
 
-// SKILLS
+// SKILLS SECTION
 .skills {
 	&__grid {
 		display: grid;
-		grid-template-columns: 1;
+		grid-template-columns: 1fr;
 		grid-row-gap: 1rem;
 		justify-items: center;
 		align-items: center;
@@ -127,10 +137,8 @@ section {
 		}
 
 		@media only screen and (min-width: $bp-large) {
-			////Experriment
 			grid-template-columns: repeat(2, 1fr);
 			justify-content: center;
-			margin-bottom: 6rem;
 		}
 	}
 
@@ -167,19 +175,19 @@ section {
 	}
 
 	.fe {
-		background: pink;
-		border: 1px solid pink;
+		background: $pink;
+		border: 1px solid $pink;
 		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 	}
 
 	.be {
-		background: rgb(167, 223, 255);
-		border: 1px solid rgb(167, 223, 255);
+		background: $blue;
+		border: 1px solid $blue;
 	}
 
 	.to {
-		background: rgb(243, 174, 133);
-		border: 1px solid rgb(243, 174, 133);
+		background: $orange;
+		border: 1px solid $orange;
 		border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
 
 		@media only screen and (min-width: $bp-medium) {
@@ -188,8 +196,8 @@ section {
 	}
 
 	.ot {
-		background: rgb(165, 231, 206);
-		border: 1px solid rgb(165, 231, 206);
+		background: $green;
+		border: 1px solid $green;
 
 		@media only screen and (min-width: $bp-medium) {
 			border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
@@ -197,11 +205,11 @@ section {
 	}
 }
 
-// PROJECTS
+// PROJECTS SECTION
 .projects {
 	&__grid {
 		display: grid;
-		grid-template-columns: 1;
+		grid-template-columns: 1fr;
 		grid-row-gap: 1rem;
 		justify-items: center;
 		align-items: center;
@@ -213,14 +221,8 @@ section {
 			padding: 0 1rem;
 
 			@media only screen and (min-width: $bp-large) {
-				margin-bottom: 6rem;
 			}
 		}
-
-		// @media only screen and (min-width: $bp-large) {
-		// 	grid-template-columns: repeat(auto-fit, 1fr);
-		// 	justify-content: center;
-		// }
 	}
 
 	&__card {
@@ -231,7 +233,7 @@ section {
 		margin: 1rem;
 		margin-top: 0;
 
-		// Set the GH link at the bottom
+		// Set the github link at the bottom
 		p {
 			margin-top: auto;
 		}
@@ -262,27 +264,41 @@ section {
 	&__detail {
 		margin-bottom: 2rem;
 		list-style: square;
-		// list-style-position: inside;
 		text-align: left;
 	}
 }
 
-// CONTACT
+// CONTACT SECTION
 .contact {
-	&__mail {
-		text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	// 100vh - container pad + footer pad
+	height: calc(100vh - 5rem);
+
+	@media only screen and (min-width: $bp-large) {
+		height: calc(100vh - 4rem);
+		padding-top: 4rem;
+	}
+
+	&__heading {
+		margin: 2rem 0;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__icon {
+		display: inline-block;
+		padding: 0.5rem;
 	}
 }
-.link-contact {
-	display: inline-block;
-	font-size: 0.75rem;
-	text-decoration: none;
-	padding: 0.5rem;
-	border: 1px solid black;
 
-	span {
-		display: inline-block;
-		padding: 0rem;
-		vertical-align: middle;
-	}
+.link-social {
+	// https://css-tricks.com/forums/topic/inline-svg-icon-in-an-not-being-contained/
+	display: inline-block;
+	padding: 0;
 }

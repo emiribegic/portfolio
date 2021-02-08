@@ -1,26 +1,6 @@
 .footer {
-	margin: 0 auto;
-	padding: 1rem 2rem;
-	text-align: center;
-
-	&__nav {
-		margin: 0 auto;
-	}
-
-	&__list {
-		display: flex;
-		justify-content: center;
-		border-top: 1px #777 dotted;
-	}
-
-	&__item {
-		display: inline-block;
-		padding: 0.5rem;
-	}
-}
-
-.link-social {
-	// https://css-tricks.com/forums/topic/inline-svg-icon-in-an-not-being-contained/
-	display: inline-block;
-	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4rem;
 }
