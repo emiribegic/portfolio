@@ -3,6 +3,7 @@ import './styles/main.scss';
 
 // JS file
 import { enableBurgerMenu } from './js/activateHamburger';
+import { createNav } from './js/app';
 
 // Images
 import profileImage from './img/eb-profile-img.png';
@@ -21,16 +22,6 @@ projectImg3.src = projectImage3;
 
 const projectImg4 = document.getElementById('project-img-4');
 projectImg4.src = projectImage4;
-
-// const header = document.querySelector('.header');
-// const hero = document.querySelector('.hero');
-
-// // Dynamically get the height of the header and calculate the hight of hero
-// window.addEventListener('load', () => {
-// 	const headerHeight = header.offsetHeight;
-// 	console.log(headerHeight);
-// 	hero.style.height = `calc(100vh - 1rem - ${headerHeight}px)`;
-// });
 
 // TODO Why do i need to export & where to export again?
 // export { enableBurgerMenu };

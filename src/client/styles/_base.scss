@@ -35,6 +35,11 @@ html {
 
 body {
 	font: $font-stack;
+
+	// Allow background to be scrolled
+	@media only screen and (min-width: $bp-large) {
+		overflow-y: visible !important;
+	}
 }
 
 h1,

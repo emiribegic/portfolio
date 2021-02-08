@@ -50,19 +50,22 @@
 		z-index: 3;
 		transition: top 0.3s;
 
+		// Show nav list by clicking the 🍔
+		&.show {
+			top: 0;
+			position: fixed;
+
+			@media only screen and (min-width: $bp-large) {
+				position: static;
+			}
+		}
+
 		@media only screen and (min-width: $bp-large) {
-			position: static;
 			top: 0;
 			left: 0;
 			background: none;
 			z-index: auto;
 			transition: none;
-		}
-
-		// Show nav list by clicking the 🍔
-		&.show {
-			top: 0;
-			position: fixed;
 		}
 	}
 
@@ -70,9 +73,11 @@
 		display: inline-block;
 		padding: 1rem 0;
 		opacity: 0;
+		z-index: 4;
 
 		@media only screen and (min-width: $bp-large) {
 			opacity: 100;
+			animation: none !important;
 		}
 	}
 
