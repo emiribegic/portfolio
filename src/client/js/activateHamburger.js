@@ -49,16 +49,36 @@ const toggleHam = () => {
 };
 
 // OPEN / CLOSE NAV
-const bpLarge = window.matchMedia;
-('(min-width: 992px)');
 
-const enableBurgerMenu = () => {
-	if (!bpLarge) {
+// TODO enableBurgerMenu must be implemented when the media query is less than 991px ($bp-large)
+// Reason 1 - it adds overflow-f style to body and let nav items go up and down by clicking
+// Reason 2 - inline style must be applied only for burger menu, not for the bigger screens
+// If both are solved, test if i can remove class properties for overflow-y and list item animation when the screen is large
+/////////TODO
+// 解決しそうだけど、一旦🍔clickすると、overflow-yとanimationがbp-largeでもclick毎にtoggleされてしまう
+// 大きいスクリーンの時に、クリックしてもtoggleしないようにする方法を考える
+
+const screenTest = e => {
+	if (e.matches) {
+		/* the viewport is 991 pixels wide or less */
 		hamburger.addEventListener('click', toggleHam);
 		headerItem.forEach(item => {
 			item.addEventListener('click', toggleHam);
 		});
+	} else {
+		document.body.style.removeProperty('overflowY');
+		headerItem.forEach(item => item.style.removeProperty('animation'));
+		// headerList.classList.remove('show');
 	}
 };
 
-enableBurgerMenu();
+export { screenTest };
+
+// const enableBurgerMenu = () => {
+// 	hamburger.addEventListener('click', toggleHam);
+// 	headerItem.forEach(item => {
+// 		item.addEventListener('click', toggleHam);
+// 	});
+// };
+
+// enableBurgerMenu();

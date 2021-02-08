@@ -2,8 +2,8 @@
 import './styles/main.scss';
 
 // JS file
-import { enableBurgerMenu } from './js/activateHamburger';
-import { createNav } from './js/app';
+// import { enableBurgerMenu } from './js/activateHamburger';
+import { screenTest } from './js/activateHamburger';
 
 // Images
 import profileImage from './img/eb-profile-img.png';
@@ -25,3 +25,8 @@ projectImg4.src = projectImage4;
 
 // TODO Why do i need to export & where to export again?
 // export { enableBurgerMenu };
+
+const smallScreen = window.matchMedia('(max-width: 991px)');
+screenTest(smallScreen);
+smallScreen.addEventListener('change', screenTest, false);
+smallScreen.onchange = () => console.log(smallScreen);
