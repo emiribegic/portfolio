@@ -59,7 +59,7 @@ section {
 	align-items: center;
 
 	@media only screen and (min-width: $bp-large) {
-		height: calc(100vh - 2rem);
+		height: calc(100vh - 4rem);
 	}
 }
 
@@ -95,10 +95,6 @@ section {
 		@media only screen and (min-width: $bp-small) {
 			margin: 1rem;
 		}
-
-		// @media only screen and (min-width: $bp-large) {
-		// 	padding: 3rem;
-		// }
 	}
 
 	&__text {
@@ -108,11 +104,6 @@ section {
 		@media only screen and (min-width: $bp-small) {
 			margin: 1rem;
 		}
-
-		/////Experiment TODO Later avtivate it
-		// @media only screen and (min-width: $bp-large) {
-		// 	padding-right: 4rem;
-		// }
 
 		p {
 			margin-bottom: 0.85rem;

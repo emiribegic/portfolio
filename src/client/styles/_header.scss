@@ -11,7 +11,7 @@
 		height: 8vh;
 
 		@media only screen and (min-width: $bp-large) {
-			display: block;
+			flex-direction: column;
 			justify-content: space-between;
 			text-align: center;
 			height: calc(100vh - 4rem);
@@ -53,14 +53,14 @@
 		@media only screen and (min-width: $bp-large) {
 			// width: 100%;
 			// height: calc(100vh - 8vh);
-			position: inherit;
+			position: static;
 			top: 0;
 			left: 0;
 			background: none;
 			z-index: auto;
 			transition: none;
-			justify-content: start;
-			padding-top: 3rem;
+			// justify-content: start;
+			// padding-top: 3rem;
 		}
 
 		// Show list items by clicking the hamburger menu
@@ -79,11 +79,11 @@
 			opacity: 100;
 		}
 
-		&:nth-child(1) {
-			@media only screen and (min-width: $bp-large) {
-				display: none;
-			}
-		}
+		// &:nth-child(1) {
+		// 	@media only screen and (min-width: $bp-large) {
+		// 		display: none;
+		// 	}
+		// }
 	}
 
 	@keyframes navItemFade {
