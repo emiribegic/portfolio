@@ -1,9 +1,8 @@
-// HAMBURGER
 const sections = document.querySelectorAll('section');
 const hamburger = document.querySelector('.hamburger');
 const headerList = document.querySelector('.header__list');
 
-// NAV
+// Dynamically generate nav list items from sections
 sections.forEach(section => {
 	const list = document.createElement('li');
 	const anchor = document.createElement('a');
@@ -17,17 +16,14 @@ sections.forEach(section => {
 
 const headerItem = document.querySelectorAll('.header__item');
 
-// HELPER FUNCTION
+// Helper - 1
 const toggleHam = () => {
 	// Toggle classes to open / close 🍔
 	hamburger.classList.toggle('is-active');
 	// Toggle classes to show / hide nav
 	headerList.classList.toggle('show');
 
-	////////// TODO /////////
-	// Can i make it more DRY????
-
-	// Prevent scrolling when the menu is open (under 48rem)
+	// Prevent background scrolling when the menu is open
 	if (document.body.style.overflowY) {
 		document.body.style.overflowY = '';
 	} else {
@@ -35,7 +31,6 @@ const toggleHam = () => {
 	}
 
 	// Add animation to nav items
-	// TODO instyleだからcssも塗り替えられる
 	headerItem.forEach((item, i) => {
 		// console.log(i);
 		if (item.style.animation) {
@@ -48,37 +43,34 @@ const toggleHam = () => {
 	});
 };
 
-// OPEN / CLOSE NAV
-
-// TODO enableBurgerMenu must be implemented when the media query is less than 991px ($bp-large)
-// Reason 1 - it adds overflow-f style to body and let nav items go up and down by clicking
-// Reason 2 - inline style must be applied only for burger menu, not for the bigger screens
-// If both are solved, test if i can remove class properties for overflow-y and list item animation when the screen is large
-/////////TODO
-// 解決しそうだけど、一旦🍔clickすると、overflow-yとanimationがbp-largeでもclick毎にtoggleされてしまう
-// 大きいスクリーンの時に、クリックしてもtoggleしないようにする方法を考える
-
+/*
+ * Helper - 2
+ * Add / remove click event depending on media query breakpoints
+ * https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
+ */
 const screenTest = e => {
 	if (e.matches) {
-		/* the viewport is 991 pixels wide or less */
+		// the viewport is 991 pixels wide or less
 		hamburger.addEventListener('click', toggleHam);
 		headerItem.forEach(item => {
 			item.addEventListener('click', toggleHam);
 		});
 	} else {
-		document.body.style.removeProperty('overflowY');
-		headerItem.forEach(item => item.style.removeProperty('animation'));
-		// headerList.classList.remove('show');
+		// the viewport is 992 pixels wide or greater
+		hamburger.removeEventListener('click', toggleHam);
+		headerItem.forEach(item =>
+			item.removeEventListener('click', toggleHam)
+		);
 	}
 };
 
-export { screenTest };
+// Enable 🍔 menu when the viewport <= 991px
+const enableBurgerMenu = () => {
+	const smallScreen = window.matchMedia('(max-width: 991px)');
+	screenTest(smallScreen);
+	smallScreen.addEventListener('change', screenTest, false);
+	// smallScreen.onchange = () => console.log(smallScreen);
+};
+enableBurgerMenu();
 
-// const enableBurgerMenu = () => {
-// 	hamburger.addEventListener('click', toggleHam);
-// 	headerItem.forEach(item => {
-// 		item.addEventListener('click', toggleHam);
-// 	});
-// };
-
-// enableBurgerMenu();
+export { enableBurgerMenu };
