@@ -1,7 +1,7 @@
 // CONTAINER
 .container {
-	margin: 0 auto;
-	padding: 0 2rem;
+	// margin: 0 auto;
+	padding: 0 1rem;
 
 	@media only screen and (min-width: $bp-large) {
 		display: grid;
@@ -11,13 +11,22 @@
 		justify-items: center;
 		padding: 0 5rem;
 	}
+
+	@media only screen and (min-width: $bp-largest) {
+		padding-right: 15rem;
+	}
 }
 
 main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(100vh - 8vh) repeat(3, minmax(10vh, max-content)) 92vh 8vh;
+	justify-items: stretch;
+	padding: 0 1rem;
+
 	@media only screen and (min-width: $bp-large) {
-		display: grid;
-		grid-template-columns: 1fr;
 		grid-template-rows: 100vh repeat(3, minmax(10vh, max-content)) 90vh 10vh;
+		padding: 0;
 	}
 }
 
@@ -48,24 +57,20 @@ section {
 
 .heading-2 {
 	margin: 3rem 0;
-	@media only screen and (min-width: $bp-large) {
-		display: flex;
-		justify-content: center;
-	}
+	display: flex;
+	justify-content: center;
 
 	.section-heading {
-		@media only screen and (min-width: $bp-large) {
-			display: inline-block;
-			padding-bottom: 0.5rem;
-			border-bottom: 1px solid #777;
-		}
+		display: inline-block;
+		padding-bottom: 0.5rem;
+		border-bottom: 1px solid #777;
 	}
 }
 
 // HERO SECTION
 .hero {
 	// 100vh - header height - container pad
-	height: calc(100vh - 8vh - 1rem);
+	height: calc(100vh - 8vh);
 	display: flex;
 	align-items: center;
 
