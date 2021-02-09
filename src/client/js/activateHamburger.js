@@ -2,7 +2,8 @@ const sections = document.querySelectorAll('section');
 const hamburger = document.querySelector('.hamburger');
 const headerList = document.querySelector('.header__list');
 
-// Dynamically generate nav list items from sections
+// TODO there should be better way to add header as well???
+// Dynamically generate nav list items from sections (excl.hero)
 sections.forEach(section => {
 	const list = document.createElement('li');
 	const anchor = document.createElement('a');
@@ -10,8 +11,11 @@ sections.forEach(section => {
 	anchor.classList.add('link');
 	anchor.setAttribute('href', `#${section.id}`);
 	anchor.innerText = section.dataset.nav;
-	list.appendChild(anchor);
-	headerList.appendChild(list);
+
+	if (anchor.innerText !== 'undefined') {
+		list.appendChild(anchor);
+		headerList.appendChild(list);
+	}
 });
 
 const headerItem = document.querySelectorAll('.header__item');
