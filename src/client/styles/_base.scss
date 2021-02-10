@@ -6,7 +6,6 @@ $pink: rgb(255, 192, 203);
 $blue: rgb(167, 223, 255);
 $orange: rgb(243, 174, 133);
 $green: rgb(165, 231, 206);
-$color-link: rgb(112, 112, 112);
 
 // MARGIN
 $center-w-margin: 0 auto;
@@ -81,7 +80,6 @@ ul {
 	text-decoration: none;
 	color: #000;
 	background: linear-gradient(to bottom, $pink 0%, $pink 100%);
-	// background-size: 0.25rem 0.25rem;
 	background-size: 0 0;
 	background-position: 0 100%;
 	background-repeat: repeat-x;

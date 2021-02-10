@@ -1,6 +1,5 @@
 // CONTAINER
 .container {
-	// margin: 0 auto;
 	padding: 0 1rem;
 
 	@media only screen and (min-width: $bp-large) {
@@ -104,7 +103,7 @@ section {
 
 	&__img {
 		.center {
-			margin: 0 auto;
+			margin: $center-w-margin;
 		}
 
 		@media only screen and (min-width: $bp-small) {
@@ -114,9 +113,13 @@ section {
 
 	&__text {
 		text-align: justify;
-		text-justify: inter-word;
+		// text-justify: inter-word;
 
 		@media only screen and (min-width: $bp-small) {
+			margin: 0 4rem;
+		}
+
+		@media only screen and (min-width: $bp-medium) {
 			margin: 1rem;
 		}
 
