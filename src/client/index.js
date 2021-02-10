@@ -2,8 +2,7 @@
 import './styles/main.scss';
 
 // JS file
-// import { enableBurgerMenu } from './js/activateHamburger';
-import { enableBurgerMenu } from './js/activateHamburger';
+import { enableResponsiveNav } from './js/app';
 
 // Images
 import profileImage from './img/eb-profile-img.png';
