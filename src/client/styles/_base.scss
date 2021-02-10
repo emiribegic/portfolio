@@ -77,16 +77,15 @@ ul {
 	list-style: none;
 }
 
-// TODO delete link class in html
-a {
+.link {
 	text-decoration: none;
 	color: #000;
 	background: linear-gradient(to bottom, $pink 0%, $pink 100%);
-	background-size: 0.25rem 0.25rem;
+	// background-size: 0.25rem 0.25rem;
+	background-size: 0 0;
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	transition: background-size 0.3s;
-	transition: font-size 0.3s;
 
 	&:visited {
 		text-decoration: none;
