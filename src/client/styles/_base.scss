@@ -77,33 +77,27 @@ ul {
 	list-style: none;
 }
 
-.link {
+// TODO delete link class in html
+a {
 	text-decoration: none;
-	text-transform: uppercase;
-	color: $color-link;
-	cursor: pointer;
-	position: relative;
-	z-index: 2;
+	color: #000;
+	background: linear-gradient(to bottom, $pink 0%, $pink 100%);
+	background-size: 0.25rem 0.25rem;
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	transition: background-size 0.3s;
+	transition: font-size 0.3s;
 
-	&:after {
-		content: '';
-		background: $color-link;
-		width: calc(100% + 10px);
-		height: 0px;
-		position: absolute;
-		bottom: -1px;
-		left: -5px;
-		transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-		transform-origin: bottom center;
-		z-index: -1;
+	&:visited {
+		text-decoration: none;
 	}
 
 	&:hover {
-		color: #fff;
+		background-size: 0.25rem 3.125rem;
+	}
 
-		&:after {
-			height: 110%;
-		}
+	&:active {
+		color: #fff;
 	}
 }
 
