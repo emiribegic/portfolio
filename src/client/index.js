@@ -4,12 +4,10 @@ import './styles/main.scss';
 // JS file
 import { enableResponsiveNav } from './js/app';
 
-// TODO create a function
 // Images
 import profileImage from './img/eb-profile-img.png';
-import projectImage1 from './img/eb-travel-app.png';
-import projectImage3 from './img/eb-weather-journal-app.png';
-import projectImage4 from './img/eb-personal-blog.png';
+import projectImage1 from './img/eb-portfolio.png';
+import projectImage2 from './img/eb-travel-app.png';
 
 const profileImg = document.getElementById('about__img');
 profileImg.src = profileImage;
@@ -17,11 +15,5 @@ profileImg.src = profileImage;
 const projectImg1 = document.getElementById('project-img-1');
 projectImg1.src = projectImage1;
 
-const projectImg3 = document.getElementById('project-img-3');
-projectImg3.src = projectImage3;
-
-const projectImg4 = document.getElementById('project-img-4');
-projectImg4.src = projectImage4;
-
-// TODO Why do i need to export & where to export again?
-// export { enableBurgerMenu };
+const projectImg2 = document.getElementById('project-img-2');
+projectImg2.src = projectImage2;

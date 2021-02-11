@@ -76,7 +76,7 @@ export const enableResponsiveNav = () => {
 	smallScreen.addEventListener('change', screenTest, false);
 	// smallScreen.onchange = () => console.log(smallScreen);
 
-	// 5. Smooth scroll
+	// 4. Smooth scroll
 	const scrollSmoothly = () => {
 		const links = document.querySelectorAll('.header__item a');
 
