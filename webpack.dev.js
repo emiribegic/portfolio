@@ -7,10 +7,6 @@ module.exports = {
 	mode: 'development',
 	devtool: 'source-map',
 	entry: './src/client/index.js',
-	output: {
-		libraryTarget: 'var',
-		library: 'Clienet',
-	},
 	stats: 'verbose',
 	devServer: {
 		contentBase: path.join(__dirname, 'dist'),
