@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors'); // Allows cross-origin requests
 const path = require('path');
 const app = express();
-const port = 8082;
+const port = process.env.PORT || 8082;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
