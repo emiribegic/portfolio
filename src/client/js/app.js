@@ -55,21 +55,21 @@ export const enableResponsiveNav = () => {
 	 * 3. Add / remove click event depending on media query breakpoints
 	 * https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
 	 */
+
+	const navLinkToggle = e => {
+		e.preventDefault();
+		if (e.target.classList.contains('link')) toggleHam();
+	};
+
 	const screenTest = e => {
 		if (e.matches) {
 			// the viewport is 991 pixels wide or less
 			hamburger.addEventListener('click', toggleHam);
-			headerList.addEventListener(function (e) {
-				e.preventDefault();
-				if (e.target.classList.contains('header__item')) toggleHam;
-			});
+			headerList.addEventListener('click', navLinkToggle);
 		} else {
 			// the viewport is 992 pixels wide or greater
 			hamburger.removeEventListener('click', toggleHam);
-			headerList.removeEventListener(function (e) {
-				e.preventDefault();
-				if (e.target.classList.contains('header__item')) toggleHam;
-			});
+			headerList.removeEventListener('click', navLinkToggle);
 		}
 	};
 
@@ -79,21 +79,16 @@ export const enableResponsiveNav = () => {
 	// smallScreen.onchange = () => console.log(smallScreen);
 
 	// 4. Smooth scroll
-	const scrollSmoothly = () => {
-		const links = document.querySelectorAll('.header__item a');
+	headerList.addEventListener('click', function (e) {
+		e.preventDefault();
 
-		links.forEach(link => {
-			link.addEventListener('click', e => {
-				e.preventDefault();
-				const href = link.getAttribute('href');
-				document.querySelector(href).scrollIntoView({
-					behavior: 'smooth',
-				});
+		if (e.target.classList.contains('link')) {
+			const id = e.target.getAttribute('href');
+			document.querySelector(id).scrollIntoView({
+				behavior: 'smooth',
 			});
-		});
-	};
-
-	scrollSmoothly();
+		}
+	});
 };
 
 enableResponsiveNav();
