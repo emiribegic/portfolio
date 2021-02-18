@@ -59,15 +59,17 @@ export const enableResponsiveNav = () => {
 		if (e.matches) {
 			// the viewport is 991 pixels wide or less
 			hamburger.addEventListener('click', toggleHam);
-			headerItem.forEach(item => {
-				item.addEventListener('click', toggleHam);
+			headerList.addEventListener(function (e) {
+				e.preventDefault();
+				if (e.target.classList.contains('header__item')) toggleHam;
 			});
 		} else {
 			// the viewport is 992 pixels wide or greater
 			hamburger.removeEventListener('click', toggleHam);
-			headerItem.forEach(item =>
-				item.removeEventListener('click', toggleHam)
-			);
+			headerList.removeEventListener(function (e) {
+				e.preventDefault();
+				if (e.target.classList.contains('header__item')) toggleHam;
+			});
 		}
 	};
 
