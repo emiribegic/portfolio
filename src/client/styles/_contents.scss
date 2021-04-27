@@ -237,11 +237,6 @@ section {
 		align-items: center;
 		margin: 1rem;
 		margin-top: 0;
-
-		// Set the github link at the bottom
-		p {
-			margin-top: auto;
-		}
 	}
 
 	&__img {
@@ -278,6 +273,18 @@ section {
 		@media only screen and (min-width: $bp-medium) {
 			margin: 0;
 			margin-bottom: 2rem;
+		}
+	}
+
+	&__link {
+		display: flex;
+		justify-content: space-around;
+		padding: 0 2rem;
+		// Set links at the bottom
+		margin-top: auto;
+
+		p {
+			padding: 0 2rem;
 		}
 	}
 }
