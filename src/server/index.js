@@ -1,4 +1,3 @@
-// const bodyParser = require('body-parser');
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -8,7 +7,5 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 app.use(express.static('dist'));
-
-// app.get('/', (req, res) => res.sendFile('dist/index.html'));
 
 app.listen(port, () => console.log(`Running on localhost ${port}`));
