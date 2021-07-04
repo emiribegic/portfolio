@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-<img src="https://github.com/emiribegic/portfolio/blob/master/demo/portfolio_demo.gif" alt="Portfolio of Emiri Begic" width="700px">
+<img src="https://github.com/emiribegic/portfolio/blob/master/demo/portfolio_demo.gif" alt="Personal portfolio of Emiri Begic" width="700px">
 For demo, please visit at https://emiribegic.herokuapp.com/
 
 ## Features
@@ -14,7 +14,3 @@ For demo, please visit at https://emiribegic.herokuapp.com/
 -   Node.js / Express.js
 -   Webpack
 -   HTML / SCSS
-
-## Deployment
-
--   Heroku
